@@ -36,7 +36,7 @@ public class StatsServiceTest {
     public void salesamount() { //Общая сумма продаж
         StatsService service = new StatsService();
 
-        int[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         int Expectedamount = 180;
         int actualday = service.salesamount(sales);
@@ -49,7 +49,7 @@ public class StatsServiceTest {
     public void averageamount() { //Средняя сумма продаж
         StatsService service = new StatsService();
 
-        int[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         int Expectedamount = 15;
         int actualday = service.averageamount(sales);
@@ -63,7 +63,7 @@ public class StatsServiceTest {
     public void belowaveragesales() { //Ниже средних продаж
         StatsService service = new StatsService();
 
-        int[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         int ExpectedMonth = 7;
         int actualday = service.belowaveragesales(sales);
@@ -75,7 +75,7 @@ public class StatsServiceTest {
     public void aboveaveragesales() { //Выше средних продаж
         StatsService service = new StatsService();
 
-        int[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         int ExpectedMonth = 5;
         int actualday = service.aboveaveragesales(sales);
