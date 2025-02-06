@@ -44,7 +44,7 @@ public class StatsService {
     }
 
     public long belowAverageSales(long[] sales) {
-        long averge = averageamount(sales);
+        long averge = averageAmount(sales);
       long count = 0;
 
         for (long sale : sales) {
@@ -56,7 +56,7 @@ public class StatsService {
     }
 
     public long aboveAverageSales(long[] sales) {
-        long averge = averageamount(sales);
+        long averge = averageAmount(sales);
         long count = 0;
 
         for (long sale : sales) {
