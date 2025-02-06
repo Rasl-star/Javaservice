@@ -24,7 +24,7 @@ public class StatsService {
         return maxMonth + 1;
     }
 
-    public long salesamount(long[] sales) {
+    public long salesAmount(long[] sales) {
         long amount = 0;
         for (long sale : sales) {
             amount += sale;
@@ -32,7 +32,7 @@ public class StatsService {
         return amount;
     }
 
-    public long averageamount(long[] sales) {
+    public long averageAmount(long[] sales) {
         long amount = 0;
         for (long sale : sales) {
             amount += sale;
@@ -43,7 +43,7 @@ public class StatsService {
         return amount / sales.length;
     }
 
-    public long belowaveragesales(long[] sales) {
+    public long belowAverageSales(long[] sales) {
         long averge = averageamount(sales);
       long count = 0;
 
@@ -55,7 +55,7 @@ public class StatsService {
         return count;
     }
 
-    public long aboveaveragesales(long[] sales) {
+    public long aboveAverageSales(long[] sales) {
         long averge = averageamount(sales);
         long count = 0;
 

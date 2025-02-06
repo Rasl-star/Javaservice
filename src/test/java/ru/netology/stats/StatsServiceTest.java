@@ -33,26 +33,26 @@ public class StatsServiceTest {
 
     @Test
 
-    public void salesamount() { //Общая сумма продаж
+    public void salesAmount() { //Общая сумма продаж
         StatsService service = new StatsService();
 
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         long Expectedamount = 180;
-        long actualday = service.salesamount(sales);
+        long actualday = service.salesAmount(sales);
 
         Assertions.assertEquals(actualday, Expectedamount);
     }
 
     @Test
 
-    public void averageamount() { //Средняя сумма продаж
+    public void averageAmount() { //Средняя сумма продаж
         StatsService service = new StatsService();
 
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         long Expectedamount = 15;
-        long actualday = service.averageamount(sales);
+        long actualday = service.averageAmount(sales);
 
         Assertions.assertEquals(actualday, Expectedamount);
 
@@ -60,25 +60,25 @@ public class StatsServiceTest {
 
     @Test
 
-    public void belowaveragesales() { //Ниже средних продаж
+    public void belowAverageSales() { //Ниже средних продаж
         StatsService service = new StatsService();
 
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         long ExpectedMonth = 7;
-        long actualday = service.belowaveragesales(sales);
+        long actualday = service.belowAverageSales(sales);
 
         Assertions.assertEquals(actualday, ExpectedMonth);
     }
 
     @Test
-    public void aboveaveragesales() { //Выше средних продаж
+    public void aboveAverageSales() { //Выше средних продаж
         StatsService service = new StatsService();
 
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         long ExpectedMonth = 5;
-        long actualday = service.aboveaveragesales(sales);
+        long actualday = service.aboveAverageSales(sales);
 
         Assertions.assertEquals(actualday, ExpectedMonth);
     }
