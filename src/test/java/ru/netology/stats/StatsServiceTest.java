@@ -12,8 +12,8 @@ public class StatsServiceTest {
 
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
-        int ExpectedMonth = 9;
-        int actualday = service.minSales(sales);
+        long ExpectedMonth = 9;
+        long actualday = service.minSales(sales);
 
         Assertions.assertEquals(actualday, ExpectedMonth);
     }
@@ -25,8 +25,8 @@ public class StatsServiceTest {
 
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
-        int ExpectedMonth = 8;
-        int actualday = service.maxSales(sales);
+        long ExpectedMonth = 8;
+        long actualday = service.maxSales(sales);
 
         Assertions.assertEquals(actualday, ExpectedMonth);
     }
@@ -38,8 +38,8 @@ public class StatsServiceTest {
 
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
-        int Expectedamount = 180;
-        int actualday = service.salesamount(sales);
+        long Expectedamount = 180;
+        long actualday = service.salesamount(sales);
 
         Assertions.assertEquals(actualday, Expectedamount);
     }
@@ -51,8 +51,8 @@ public class StatsServiceTest {
 
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
-        int Expectedamount = 15;
-        int actualday = service.averageamount(sales);
+        long Expectedamount = 15;
+        long actualday = service.averageamount(sales);
 
         Assertions.assertEquals(actualday, Expectedamount);
 
@@ -65,8 +65,8 @@ public class StatsServiceTest {
 
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
-        int ExpectedMonth = 7;
-        int actualday = service.belowaveragesales(sales);
+        long ExpectedMonth = 7;
+        long actualday = service.belowaveragesales(sales);
 
         Assertions.assertEquals(actualday, ExpectedMonth);
     }
@@ -77,8 +77,8 @@ public class StatsServiceTest {
 
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
-        int ExpectedMonth = 5;
-        int actualday = service.aboveaveragesales(sales);
+        long ExpectedMonth = 5;
+        long actualday = service.aboveaveragesales(sales);
 
         Assertions.assertEquals(actualday, ExpectedMonth);
     }

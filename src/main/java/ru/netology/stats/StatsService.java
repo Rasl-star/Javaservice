@@ -1,7 +1,7 @@
 package ru.netology.stats;
 
 public class StatsService {
-    public int minSales(long[] sales) {
+    public long minSales(long[] sales) {
         int minMonth = 0; // номер месяца с минимальными продажами среди просмотренных ранее
 
         for (int i = 0; i < sales.length; i++) {
@@ -13,7 +13,7 @@ public class StatsService {
         return minMonth + 1; // месяца нумеруются с 1, а индексы массива с 0, нужно сдвинуть ответ на 1
     }
 
-    public int maxSales(long[] sales) {
+    public long maxSales(long[] sales) {
         int maxMonth = 0; //номер месяца с максимальной продажой
 
         for (int t = 0; t < sales.length; t++) {
@@ -24,16 +24,16 @@ public class StatsService {
         return maxMonth + 1;
     }
 
-    public int salesamount(long[] sales) {
-        int amount = 0;
+    public long salesamount(long[] sales) {
+        long amount = 0;
         for (long sale : sales) {
             amount += sale;
         }
         return amount;
     }
 
-    public int averageamount(long[] sales) {
-        int amount = 0;
+    public long averageamount(long[] sales) {
+        long amount = 0;
         for (long sale : sales) {
             amount += sale;
         }
@@ -43,9 +43,9 @@ public class StatsService {
         return amount / sales.length;
     }
 
-    public int belowaveragesales(long[] sales) {
-        int averge = averageamount(sales);
-        int count = 0;
+    public long belowaveragesales(long[] sales) {
+        long averge = averageamount(sales);
+      long count = 0;
 
         for (long sale : sales) {
             if (sale <= averge) {
@@ -55,9 +55,9 @@ public class StatsService {
         return count;
     }
 
-    public int aboveaveragesales(long[] sales) {
-        int averge = averageamount(sales);
-        int count = 0;
+    public long aboveaveragesales(long[] sales) {
+        long averge = averageamount(sales);
+        long count = 0;
 
         for (long sale : sales) {
             if (sale > averge) {
