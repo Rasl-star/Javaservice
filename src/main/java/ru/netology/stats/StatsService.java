@@ -43,7 +43,7 @@ public class StatsService {
         return amount / sales.length;
     }
 
-    public int belowAverageSales(long[] sales) {
+    public long belowAverageSales(long[] sales) {
         long averge = averageAmount(sales);
       int count = 0;
 
@@ -55,7 +55,7 @@ public class StatsService {
         return count;
     }
 
-    public int aboveAverageSales(long[] sales) {
+    public long aboveAverageSales(long[] sales) {
         long averge = averageAmount(sales);
         int count = 0;
 

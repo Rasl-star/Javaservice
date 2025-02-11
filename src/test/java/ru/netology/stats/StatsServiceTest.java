@@ -66,7 +66,7 @@ public class StatsServiceTest {
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         int ExpectedMonth = 7;
-        int actualday = service.belowAverageSales(sales);
+        long actualday = service.belowAverageSales(sales);
 
         Assertions.assertEquals(actualday, ExpectedMonth);
     }
@@ -78,7 +78,7 @@ public class StatsServiceTest {
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         int ExpectedMonth = 5;
-        int actualday = service.aboveAverageSales(sales);
+        long actualday = service.aboveAverageSales(sales);
 
         Assertions.assertEquals(actualday, ExpectedMonth);
     }
